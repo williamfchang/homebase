@@ -1,0 +1,1 @@
+This is the start of my personal website, located at [wfchang.space](wfchang.space) (with [wfchang.tech](wfchang.tech) as an alias). I'll use the website as a place to put my projects or links to my projects!
