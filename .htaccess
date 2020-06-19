@@ -5,5 +5,5 @@ RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
 # getting rid of "?i=1" in URL
 # Source: https://stackoverflow.com/questions/45080457/how-to-disable-i-1-parameter-in-url
-# RewriteCond %{QUERY_STRING} ^(.*)i=[^&]+(.*)$ [NC]
-# RewriteRule ^(.*)$ /$1?%1%2 [R=301,L]
+RewriteCond %{QUERY_STRING} ^(.*)i=[^&]+(.*)$ [NC]
+RewriteRule ^(.*)$ /$1?%1%2 [R=301,L]
