@@ -1,7 +1,7 @@
 # Force HTTPS usage
-# RewriteEngine On
-# RewriteCond %{HTTP:X-Forwarded-Proto} =http
-# RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI}
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
 # getting rid of "?i=1" in URL
 # Source: https://stackoverflow.com/questions/45080457/how-to-disable-i-1-parameter-in-url
