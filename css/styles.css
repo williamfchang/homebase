@@ -1,69 +1,61 @@
+/* variables */
+:root {
+    --softblue: rgb(0, 70, 100);
+    --faintsalmon: rgba(255,160,122,0.3);
+  }
+
+
+/* general styling */
 * {
     color: lemonchiffon;
 }
 
 body {
-    background-color: rgb(0, 70, 100);
+    background-color: var(--softblue);
 }
 
 mark {
-    background-color: rgba(255,160,122,0.3);
+    background-color: var(--faintsalmon);
 }
 
-.navbar {
-    list-style-type: none;
 
-    margin: 10px 20% 40px;
-    display: flex;
-    flex-direction: row;
+/* navbar */
+.navbar-brand {
+    position: relative;
+    top: -2px;
+    padding: 5px 20px;
+    margin-right: 50px;
+
+    background-color: salmon;
+    color: lemonchiffon;
+    font-family: "Roboto";
 }
 
-.navbar a, .dropdown {
-    display: inline;
+.navbar-brand:hover {
+    color: inherit;
+}
+
+.nav-link {
     color: lightsalmon;
     font-family: "Roboto";
-    text-align: center;
+    margin: 0 10px;
 }
 
-.navbar a:hover {
+.nav-link:hover {
     color: darksalmon;
-    text-decoration: none;
 }
 
 .dropdown-menu {
-    width: 300%;
-
-    perspective: 1000px;
-    background-color: rgba(255,160,122,0.3);
-    display: none;
+    background-color: lemonchiffon;
 }
 
-.dropdown-menu li {
-    color: lemonchiffon;
-    padding: 5px;
-    text-align: center;
-}
 
-.dropdown:hover .dropdown-menu {
-    display: block;
-    animation: growDown 300ms ease-in-out forwards;
-    transform-origin: top center;
-}
-
-@keyframes growDown {
-    0% {
-        transform: scaleY(0);
-    }
-    100% {
-        transform: scaleY(1);
-    }
-}
-
+/* main page */
 .main-title {
     margin: 0 10%;
 
     font-size: 80px;
-    font-size: 6.5vw;
+    font-size: max(40px, 6.5vw);
 }
 
 .center-name {
