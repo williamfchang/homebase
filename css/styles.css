@@ -1,17 +1,47 @@
 * {
-    margin: 10px;
+    color: lemonchiffon;
+}
+
+body {
+    background-color: rgb(0, 70, 100);
+}
+
+mark {
+    background-color: rgba(255,160,122,0.3);
 }
 
 .navbar {
     list-style-type: none;
 
-    margin: 10px 200px;
+    margin: 10px 20% 40px;
     display: flex;
     flex-direction: row;
 }
 
 .navbar-link {
+    font-family: "Roboto";
     display: inline;
-    padding: 10px;
-    font-family: 'Roboto';
+    text-align: center;
+    color: lightsalmon;
+}
+
+.navbar-link:hover {
+    color: darksalmon;
+    text-decoration: none;
+}
+
+.main-title {
+    margin: 0 10%;
+    font-size: 80px;
+}
+
+.center-name {
+    background-color: salmon;
+    padding: 20px;
+    text-align: center;
+    font-size: 60px;
+}
+
+.subtitle {
+    margin: 40px 20px;
 }
