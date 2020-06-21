@@ -61,16 +61,21 @@ mark {
 
 .main-title {
     margin: 0 10%;
+
     font-size: 80px;
+    font-size: 6.5vw;
 }
 
 .center-name {
     background-color: salmon;
     padding: 20px;
     text-align: center;
+
     font-size: 60px;
+    font-size: max(40px, 5vw);
 }
 
 .subtitle {
     margin: 40px 20px;
+    font-size: max(20px, 2vw);
 }
