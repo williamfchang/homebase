@@ -18,16 +18,45 @@ mark {
     flex-direction: row;
 }
 
-.navbar-link {
-    font-family: "Roboto";
+.navbar a, .dropdown {
     display: inline;
-    text-align: center;
     color: lightsalmon;
+    font-family: "Roboto";
+    text-align: center;
 }
 
-.navbar-link:hover {
+.navbar a:hover {
     color: darksalmon;
     text-decoration: none;
+}
+
+.dropdown-menu {
+    width: 300%;
+
+    perspective: 1000px;
+    background-color: rgba(255,160,122,0.3);
+    display: none;
+}
+
+.dropdown-menu li {
+    color: lemonchiffon;
+    padding: 5px;
+    text-align: center;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    animation: growDown 300ms ease-in-out forwards;
+    transform-origin: top center;
+}
+
+@keyframes growDown {
+    0% {
+        transform: scaleY(0);
+    }
+    100% {
+        transform: scaleY(1);
+    }
 }
 
 .main-title {
