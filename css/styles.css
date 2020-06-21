@@ -1,3 +1,17 @@
+* {
+    margin: 10px;
+}
+
 .navbar {
+    list-style-type: none;
+
+    margin: 10px 200px;
+    display: flex;
+    flex-direction: row;
+}
+
+.navbar-link {
     display: inline;
+    padding: 10px;
+    font-family: 'Roboto';
 }
