@@ -18,16 +18,26 @@
 <body>
     <div id="navbar"></div>
 
-    <h1 class="main-title">My name <p>&emsp; is</h1>
+    <h1 class="main-title" id="top-title">Hi there, <p>&emsp; my name is</h1>
     <h1 class="center-name">
         William Chang
     </h1>
-    <h1 class="main-title" style="text-align: right;">and welcome &emsp;<p> to my website!</h1>
+    <h1 class="main-title" id="bottom-title">
+        and welcome to &emsp;<p> my website!
+    </h1>
 
     <h3 class="subtitle">
         I am an undergraduate student at USC studying <mark>Computer&nbsp;Science</mark>
         and minoring in <mark>Musical&nbsp;Studies</mark> (classical&nbsp;piano).
-    </h3>    
+    </h3> 
+
+    <script>
+        // https://css-tricks.com/random-numbers-css/
+        var time1 = Math.random()*5 + 5;
+        var time2 = time1 + 4;
+        document.getElementById("top-title").style.setProperty("--animation-time", time1+'s');
+        document.getElementById("bottom-title").style.setProperty("--animation-time", time2+'s');
+    </script>
 
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 </body>

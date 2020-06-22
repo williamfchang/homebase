@@ -2,23 +2,22 @@
     <a class="navbar-brand" href="/">homebase</a>
 
     <ul class="navbar-nav">
-        <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">PROJECTS</a>
+        <div class="btn-group">
+            <a class="nav-link btn" href="/projects">PROJECTS</a>
+            <button type="button" class="btn dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="sr-only">Toggle Dropdown</span> <!-- for accessibility -->
+            </button>
             <div class="dropdown-menu">
-                <a class="dropdown-item" href="#">melody | familiar song finder</a>
-                <a class="dropdown-item" href="#">jupiter | resume builder</a>
+                <a class="dropdown-item" href="melody.html">melody | familiar song finder</a>
+                <a class="dropdown-item" href="jupiter.html">jupiter | resume builder</a>
                 
                 <div class="dropdown-divider"></div>
 
-                <a class="dropdown-item" href="#">hummus | USC dining hall helper</a>
-                <a class="dropdown-item" href="#">recall | browser history</a>
-
-                <div class="dropdown-divider"></div>
-
-                <a class="dropdown-item" href="projects.html">all projects</a>
+                <a class="dropdown-item" href="hummus.html">hummus | USC dining hall helper</a>
+                <a class="dropdown-item" href="recall.html">recall | browser history</a>
             </div>
-        </li>
+        </div>
 
-        <li class="nav-item"><a class="nav-link" href="about.html">ABOUT</a></li>
+        <a class="nav-link btn" href="/about.html">ABOUT</a>
     </ul>
 </nav>

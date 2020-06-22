@@ -1,7 +1,9 @@
 /* variables */
 :root {
-    --softblue: rgb(0, 70, 100);
-    --faintsalmon: rgba(255,160,122,0.3);
+    --dimblue: rgb(0, 70, 100);
+    --salmon-rgb: 255, 160, 122;
+
+    --animation-time: 5s;
   }
 
 
@@ -11,19 +13,23 @@
 }
 
 body {
-    background-color: var(--softblue);
+    background-color: var(--dimblue);
 }
 
 mark {
-    background-color: var(--faintsalmon);
+    background-color: rgb(var(--salmon-rgb), 0.3);
+    border-radius: 0.5vw;
 }
 
 
 /* navbar */
+#navbar { /* placeholder */
+    min-height: 58px;
+}
+
 .navbar-brand {
     position: relative;
-    top: -2px;
-    padding: 5px 20px;
+    padding: 5px 30px;
     margin-right: 50px;
 
     background-color: salmon;
@@ -35,19 +41,39 @@ mark {
     color: inherit;
 }
 
-.nav-link {
-    color: lightsalmon;
+.btn-group {
+    margin-right: 20px;
+}
+
+.nav-link, .btn {
+    color: salmon;
     font-family: "Roboto";
-    margin: 0 10px;
+    background-color: rgba(var(--salmon-rgb),0.15);
+    margin: 0 !important;
+}
+
+.nav-link {
+    padding: 0.5em 3em !important;
 }
 
 .nav-link:hover {
-    color: darksalmon;
+    color: salmon;
+    background-color: rgba(var(--salmon-rgb),0.3);
 }
 
+.btn-group .btn:hover {
+    background-color: rgba(var(--salmon-rgb),0.3);
+}
+
+/* nav dropdown */
 .dropdown-menu {
     background-color: lemonchiffon;
 }
+
+.dropdown-item {
+    color: var(--dimblue);
+}
+
 
 
 /* main page */
@@ -56,6 +82,17 @@ mark {
 
     font-size: 80px;
     font-size: max(40px, 6.5vw);
+
+    position: relative;
+    animation-name: x-jostle;
+    animation-duration: var(--animation-time);
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+}
+
+#bottom-title {
+    text-align: right;
 }
 
 .center-name {
@@ -70,4 +107,10 @@ mark {
 .subtitle {
     margin: 40px 20px;
     font-size: max(20px, 2vw);
+}
+
+@keyframes x-jostle {
+    0%   {left: 0px}
+    50%  {left: 100px}
+    100% {left: 0px}
 }
