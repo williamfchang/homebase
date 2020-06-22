@@ -16,11 +16,27 @@ body {
     background-color: var(--dimblue);
 }
 
-mark {
-    background-color: rgb(var(--salmon-rgb), 0.3);
-    border-radius: 0.5vw;
+.subtitle {
+    margin: 1% 5%;
+    font-size: max(20px, 2vw);
 }
 
+p {
+    margin: 2% 10%;
+    font-size: max(20px, 2vw);
+}
+
+.highlighted {
+    background-color: salmon;
+}
+
+a {
+    color: salmon;
+}
+
+a:hover {
+    color: darksalmon;
+}
 
 /* navbar */
 #navbar { /* placeholder */
@@ -75,25 +91,26 @@ mark {
 }
 
 
-
 /* main page */
 .main-title {
-    margin: 0 10%;
+    margin: 0 5%;
 
     font-size: 80px;
-    font-size: max(40px, 6.5vw);
+    font-size: max(40px, 6vw);
+}
 
+.animated-title {
     position: relative;
     animation-name: x-jostle;
     animation-duration: var(--animation-time);
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
-    animation-direction: reverse;
 }
 
-#bottom-title {
-    text-align: right;
-}
+[id^="main-title-"] {margin: 0 10%;}
+#main-title-2 { margin-left: 20%; margin-bottom: 0.1em; }
+#main-title-3 { text-align: right; margin-right: 20%; }
+#main-title-4 { text-align: right; }
 
 .center-name {
     background-color: salmon;
@@ -101,16 +118,18 @@ mark {
     text-align: center;
 
     font-size: 60px;
-    font-size: max(40px, 5vw);
-}
-
-.subtitle {
-    margin: 40px 20px;
-    font-size: max(20px, 2vw);
+    font-size: max(35px, 4.5vw);
 }
 
 @keyframes x-jostle {
     0%   {left: 0px}
-    50%  {left: 100px}
+    50%  {left: 40px}
     100% {left: 0px}
+}
+
+
+/* projects page */
+.project-list {
+    margin-left: 5%;
+    font-size: 20px;
 }
