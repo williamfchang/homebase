@@ -52,6 +52,14 @@ a:hover {
     min-height: 70px;
 }
 
+
+
+.navbar-nav {
+    flex-flow: row nowrap;
+    /* display: inline-flex moves icons to same row as buttons */
+}
+
+
 /* menu icon that shows up if window is too small */
 .navbar-toggler-icon {
     color: salmon;
@@ -61,7 +69,7 @@ a:hover {
 .navbar-brand {
     position: relative;
     padding: 5px 30px;
-    margin-right: 50px;
+    margin-right: 2vw;
 
     background-color: salmon;
     color: lemonchiffon !important;
@@ -74,28 +82,28 @@ a:hover {
 
 /* navbar button group */
 .navbar-split-dropdown {
-    margin-right: 20px;
+    margin-right: 1vw;
     
     /* restrict width in navbar dropdown menu mode */
     max-width: calc(var(--nav-width) + var(--split-dropdown-arrow-width));
 }
 
 /* navbar link text and navbar button */
-.nav-link, .btn {
-    color: lemonchiffon !important;
-    font-family: "Roboto";
-    background-color: rgba(var(--salmon-rgb),0.15);
-    margin: 0 !important;
+.nav-link.btn { /* if element is both */
+    width: var(--nav-width);
 }
 
 .nav-link {
-    width: var(--nav-width);
+    font-family: "Roboto";
     position: relative !important;
 }
 
-.nav-link:hover {
-    color: salmon;
-    background-color: rgba(var(--salmon-rgb),0.3);
+.btn {
+    color: lemonchiffon !important;
+    background-color: rgba(var(--salmon-rgb),0.15);
+    
+    font-family: "Roboto";
+    margin: 0 !important;
 }
 
 .btn:hover {
@@ -104,7 +112,7 @@ a:hover {
 
 /* navbar link text and navbar button for small screens */
 @media (max-width: 576px) {
-    .nav-link, .btn {
+    .btn {
         margin-top: 10px !important;
     }
 }
@@ -120,6 +128,11 @@ a:hover {
 
 .dropdown-item {
     color: var(--dimblue);
+}
+
+/* navbar icons */
+.navbar-nav-svg {
+    height: 1.5em;
 }
 
 
