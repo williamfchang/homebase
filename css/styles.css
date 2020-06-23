@@ -1,13 +1,17 @@
-/* variables */
+/* -- variables -- */
 :root {
+    /* colors */
     --dimblue: rgb(0, 70, 100);
     --salmon-rgb: 255, 160, 122;
 
+    /* measurements */
+    --nav-width: max(10vw, 100px);
+    --split-dropdown-arrow-width: 29.59px;
     --animation-time: 5s;
-  }
+}
 
 
-/* general styling */
+/* -- HTML built-in elements -- */
 * {
     color: lemonchiffon;
 }
@@ -16,18 +20,9 @@ body {
     background-color: var(--dimblue);
 }
 
-.subtitle {
-    margin: 1% 5%;
-    font-size: max(20px, 2vw);
-}
-
 p {
     margin: 2% 10%;
     font-size: max(20px, 2vw);
-}
-
-.highlighted {
-    background-color: salmon;
 }
 
 a {
@@ -38,18 +33,38 @@ a:hover {
     color: darksalmon;
 }
 
-/* navbar */
-#navbar { /* placeholder */
-    min-height: 58px;
+
+/* -- general classes -- */
+.subtitle {
+    margin: 1% 5%;
+    font-size: max(20px, 2vw);
 }
 
+.highlighted {
+    background-color: salmon;
+    padding: 0.5em;
+}
+
+
+/* ---- navbar ---- */
+/* navbar placeholder */
+#navbar {
+    min-height: 70px;
+}
+
+/* menu icon that shows up if window is too small */
+.navbar-toggler-icon {
+    color: salmon;
+}
+
+/* website name */
 .navbar-brand {
     position: relative;
     padding: 5px 30px;
     margin-right: 50px;
 
     background-color: salmon;
-    color: lemonchiffon;
+    color: lemonchiffon !important;
     font-family: "Roboto";
 }
 
@@ -57,19 +72,25 @@ a:hover {
     color: inherit;
 }
 
-.btn-group {
+/* navbar button group */
+.navbar-split-dropdown {
     margin-right: 20px;
+    
+    /* restrict width in navbar dropdown menu mode */
+    max-width: calc(var(--nav-width) + var(--split-dropdown-arrow-width));
 }
 
+/* navbar link text and navbar button */
 .nav-link, .btn {
-    color: salmon;
+    color: lemonchiffon !important;
     font-family: "Roboto";
     background-color: rgba(var(--salmon-rgb),0.15);
     margin: 0 !important;
 }
 
 .nav-link {
-    padding: 0.5em 3em !important;
+    width: var(--nav-width);
+    position: relative !important;
 }
 
 .nav-link:hover {
@@ -77,13 +98,24 @@ a:hover {
     background-color: rgba(var(--salmon-rgb),0.3);
 }
 
-.btn-group .btn:hover {
+.btn:hover {
     background-color: rgba(var(--salmon-rgb),0.3);
 }
 
-/* nav dropdown */
+/* navbar link text and navbar button for small screens */
+@media (max-width: 576px) {
+    .nav-link, .btn {
+        margin-top: 10px !important;
+    }
+}
+
+/* set width for about button */
+#nav-about { width: var(--nav-width); }
+
+/* navbar dropdown menu */
 .dropdown-menu {
     background-color: lemonchiffon;
+    position: absolute !important; /* force menu to display below */
 }
 
 .dropdown-item {
@@ -91,7 +123,7 @@ a:hover {
 }
 
 
-/* main page */
+/* -- main page -- */
 .main-title {
     margin: 0 5%;
 
@@ -105,6 +137,7 @@ a:hover {
     animation-duration: var(--animation-time);
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
+    animation-delay: -2s;
 }
 
 [id^="main-title-"] {margin: 0 10%;}
@@ -122,14 +155,18 @@ a:hover {
 }
 
 @keyframes x-jostle {
-    0%   {left: 0px}
-    50%  {left: 40px}
-    100% {left: 0px}
+    0%   {left: 0}
+    50%  {left: min(40px, 6vw)}
+    100% {left: 0}
 }
 
 
-/* projects page */
+/* -- projects page -- */
 .project-list {
     margin-left: 5%;
     font-size: 20px;
+}
+
+.disabled-link {
+    color: rgba(var(--salmon-rgb),0.3);
 }

@@ -1,24 +1,30 @@
-<nav class="navbar navbar-expand">
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
     <a class="navbar-brand" href="/">homebase</a>
 
-    <ul class="navbar-nav">
-        <div class="btn-group">
-            <a class="nav-link btn" href="/projects">PROJECTS</a>
-            <button type="button" class="btn dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <span class="sr-only">Toggle Dropdown</span> <!-- for accessibility -->
-            </button>
-            <div class="dropdown-menu">
-                <a class="dropdown-item" href="/projects/melody.html">melody | familiar song finder</a>
-                <a class="dropdown-item disabled" href="/projects/jupiter.html">jupiter | resume builder</a>
-                
-                <div class="dropdown-divider"></div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-                <a class="dropdown-item" href="/projects/hummus.html">hummus | USC dining hall helper</a>
-                <a class="dropdown-item disabled" href="/projects/recall.html">recall | browser history</a>
-                <a class="dropdown-item" href="/projects/homebase.html">homebase | personal website</a>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+            <div class="btn-group navbar-split-dropdown">
+                <a class="nav-link btn" href="/projects">PROJECTS</a>
+                <button type="button" class="btn dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span class="sr-only">Toggle Dropdown</span> <!-- for accessibility -->
+                </button>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="/projects/melody.html">melody | familiar song finder</a>
+                    <a class="dropdown-item disabled" href="/projects/jupiter.html">jupiter | resume builder</a>
+                    
+                    <div class="dropdown-divider"></div>
+    
+                    <a class="dropdown-item" href="/projects/hummus.html">hummus | USC dining hall helper</a>
+                    <a class="dropdown-item disabled" href="/projects/recall.html">recall | browser history</a>
+                    <a class="dropdown-item" href="/projects/homebase.html">homebase | personal website</a>
+                </div>
             </div>
-        </div>
-
-        <a class="nav-link btn" href="/about.html">ABOUT</a>
-    </ul>
+    
+            <a class="nav-link btn" id="nav-about" href="/about.html">ABOUT</a>
+        </ul>
+    </div>
 </nav>
