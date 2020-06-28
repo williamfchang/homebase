@@ -2,6 +2,7 @@
 :root {
     /* colors */
     --dimblue: rgb(0, 70, 100);
+    --dimblue-rgb: 0, 70, 100;
     --salmon-rgb: 255, 160, 122;
 
     /* measurements */
@@ -126,9 +127,9 @@ a:hover {
     position: absolute !important; /* force menu to display below */
 }
 
-.dropdown-item {
-    color: var(--dimblue);
-}
+.dropdown-item { color: var(--dimblue); }
+
+.in-progress { font-weight: bold; }
 
 /* navbar icons */
 .navbar-nav-svg {
