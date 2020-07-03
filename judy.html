@@ -16,8 +16,13 @@
 
     <script>
         function unhide() {
-            console.log('hello');
-            document.getElementById('answer').style.visibility = 'visible'; 
+            if (document.getElementById('answer').innerHTML == '') {
+                if (Math.random() > 0.5) {
+                    document.getElementById('answer').innerHTML = 'Answer: No!'; 
+                } else {
+                    document.getElementById('answer').innerHTML = 'Answer: Yes!'; 
+                }
+            }
         }
     </script>
 </head>
@@ -32,7 +37,7 @@
         <button onclick="unhide()" style="color: red;">Search!</button>
     </div>
 
-    <p id="answer" style="visibility: hidden;">Answer: Yes!</p>
+    <p id="answer"></p>
 
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 </body>
