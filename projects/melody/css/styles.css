@@ -1,0 +1,79 @@
+body {
+    margin: 20px;
+}
+
+p {
+    font-size: 24px;
+}
+
+/* piano layout */
+.keyboard-container {
+    text-align: center;
+}
+
+.keyboard {
+    display: inline-block;
+    cursor: pointer;
+
+    list-style-type: none;
+    padding-inline-start: 0;
+}
+
+.keyboard li {
+    position: relative;
+    float: left;
+    border-style: solid;
+    border-color: black;
+    border-width: 2px 1px 2px 1px;
+    border-radius: 0 0 4px 4px;
+    box-sizing: content-box;
+}
+
+ul.keyboard li:first-of-type {
+    border-left-width: 2px;
+    border-top-left-radius: 4px;
+}
+
+ul.keyboard li:last-of-type {
+    border-right-width: 2px;
+    border-top-right-radius: 4px;
+}
+
+.white-key {
+    width: 30px;
+    height: 150px;
+    vertical-align: bottom;
+}
+
+.white-key:hover { background: rgb(220,220,220); }
+
+.white-key:hover:active, .white-key-active { background: rgb(170,170,170); }
+
+.black-key {
+    z-index: 10;
+    width: 20px;
+    height: 100px;
+    margin: 0 0 0 -10px;
+    background-color: black;
+}
+
+.black-key:hover { background: rgb(50,50,50); }
+
+.black-key:hover:active, .black-key-active { background: rgb(70,70,70); }
+
+
+.white-key>p {
+    margin-top: 120px;
+    font-size: 14px;
+}
+
+.black-key>p {
+    margin-top: 70px;
+    font-size: 14px;
+    color: white;
+}
+
+/* positioning */
+.black-key + .white-key {
+    margin-left: -12px;
+}
