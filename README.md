@@ -1,7 +1,10 @@
 This is the start of my personal website, located at [wfchang.space](wfchang.space) (with [wfchang.tech](wfchang.tech) as an alias). I'll use the website as a place to put my projects or links to my projects!
 
 # Building
-- Run local: `python -m http.server`
+- Run local
+    - Using python: `python -m http.server`
+    - Alternatively, to also run PHP scripts: `php -S 127.0.0.1:8000`
+
 
 # Next Steps
 - Project Melody stuff: figure out backend (see [this reddit post](https://www.reddit.com/r/learnprogramming/comments/hgtxpz/i_am_lost_while_trying_to_fullstack_develop_a/?utm_source=share&utm_medium=web2x) for fullstack web development help)

@@ -10,6 +10,7 @@
     --split-dropdown-arrow-width: 29.59px;
     --animation-time: 5s;
 }
+/* -- end of variables -- */
 
 
 /* -- HTML built-in elements -- */
@@ -33,6 +34,7 @@ a {
 a:hover {
     color: darksalmon;
 }
+/* -- end of HTML built-in elements -- */
 
 
 /* -- general classes -- */
@@ -45,6 +47,7 @@ a:hover {
     background-color: salmon;
     padding: 0.5em;
 }
+/* -- end of general classes -- */
 
 
 /* ---- navbar ---- */
@@ -52,7 +55,6 @@ a:hover {
 #navbar {
     min-height: 70px;
 }
-
 
 
 .navbar-nav {
@@ -136,6 +138,9 @@ a:hover {
     height: 1.5em;
 }
 
+/* -- end of navbar -- */
+
+
 
 /* -- main page -- */
 .main-title {
@@ -173,6 +178,8 @@ a:hover {
     50%  {left: min(40px, 6vw)}
     100% {left: 0}
 }
+/* -- end of main page -- */
+
 
 
 /* -- projects page -- */
@@ -184,3 +191,33 @@ a:hover {
 .disabled-link {
     color: rgba(var(--salmon-rgb),0.3);
 }
+/* -- end of projects page -- */
+
+
+/* -- about page -- */
+#skills-section {
+    margin: 0 5%;
+}
+
+#skills-section .subtitle, #skills-section .main-title {
+    margin: 1rem 0;
+    text-align: center;
+}
+
+#skills-section th {
+    text-align: right;
+}
+
+#skills-section td {
+    vertical-align: middle !important;
+}
+
+#skills-section .progress {
+    background-color: var(--dimblue);
+}
+
+#skills-section .progress-bar {
+    background-color: salmon;
+    border-radius: 0.25rem;
+}
+/* -- end of about page -- */
