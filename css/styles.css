@@ -34,6 +34,11 @@ a {
 a:hover {
     color: darksalmon;
 }
+
+hr {
+    width: 90%;
+    border-color: lemonchiffon;
+}
 /* -- end of HTML built-in elements -- */
 
 
@@ -204,9 +209,14 @@ a:hover {
     text-align: center;
 }
 
-#skills-section th {
-    text-align: right;
+#skills-section .subtitle {
+    background-color: salmon;
+    padding: 1rem;
 }
+
+/* #skills-section th {
+    text-align: right;
+} */
 
 #skills-section td {
     vertical-align: middle !important;
