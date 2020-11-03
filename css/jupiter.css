@@ -1,0 +1,35 @@
+* {
+    
+}
+
+ul {
+    padding-inline-start: 20px;
+}
+
+.section h1 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+#name {
+    text-align: center;
+    font-size: 3rem;
+}
+
+#contact-info {
+    text-align: center;
+}
+
+.cell {
+    font-size: 12px;
+}
+
+.cell-title {
+    font-weight: bold;
+}
+
+.cell-date {
+    text-align: right;
+    font-weight: bold;
+}
