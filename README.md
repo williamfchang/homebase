@@ -14,3 +14,10 @@ This is the start of my personal website, located at [wfchang.space](wfchang.spa
     - [another fullstack course, articles instead of videos](https://fullstackopen.com/en)
     - will probably need to do fuzzy searching in SQL, check [this](https://www.red-gate.com/simple-talk/sql/t-sql-programming/fuzzy-searches-sql-server/) or [this](https://stackoverflow.com/questions/921978/fuzzy-matching-using-t-sql) or [this](https://www.sqlservercentral.com/articles/fuzzy-search) and/or [this?](https://www.got-it.ai/solutions/sqlquerychat/sql-help/data-query/sql-fuzzy-logic-matching-step-by-step-example-in-sql-server/)
 - [fuzzy matching with postgresql](https://www.freecodecamp.org/news/fuzzy-string-matching-with-postgresql/)
+
+## Bookmarks for SQL <-> website
+1. https://www.quora.com/How-do-I-connect-the-database-developed-in-SQL-with-HTML
+2. https://stackoverflow.com/questions/23359372/connect-html-page-with-sql-server-using-javascript
+3. https://www.w3schools.com/nodejs/nodejs_mysql_select.asp
+4. https://stackoverflow.com/questions/37453671/run-a-sql-query-in-js
+5. https://www.quora.com/What-is-the-easiest-way-to-connect-a-database-to-a-website
