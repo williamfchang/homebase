@@ -178,6 +178,22 @@ hr {
     font-size: max(35px, 4.5vw);
 }
 
+.newest-project-div {
+    background-color: salmon;
+    padding: 20px;
+    text-align: center;
+
+    font-size: max(20px, 2vw);
+}
+
+.newest-project-link {
+    color: lemonchiffon;
+}
+
+.newest-project-link:hover {
+    color: rgb(245, 237, 164);
+}
+
 @keyframes x-jostle {
     0%   {left: 0}
     50%  {left: min(40px, 6vw)}
